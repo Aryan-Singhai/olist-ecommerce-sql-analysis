@@ -1,0 +1,22 @@
+# Raw data files
+data/
+*.csv
+*.zip
+*.rar
+
+# SQL Server database files
+*.bak
+*.mdf
+*.ndf
+*.ldf
+
+# Local configuration
+.env
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db

@@ -1,38 +1,29 @@
-# Olist E-Commerce SQL Analysis
+# Olist E-Commerce Business Analysis
 
-> SQL-based business analysis of the Olist Brazilian e-commerce dataset to uncover revenue, customer, product, seller, payment, review and logistics insights.
+A SQL-based business analysis of the Brazilian E-Commerce Public Dataset by Olist, covering revenue, customers, products, sellers, payments, reviews and logistics.
+
+**🌐 Portfolio:** [View the project on my portfolio](https://aryan-singhai.github.io/olist-ecommerce-analysis.html)
 
 ---
 
 ## 📌 Project Overview
 
-This project analyzes the Brazilian E-Commerce Public Dataset by Olist using **SQL and Microsoft SQL Server**.
+This project uses **SQL and Microsoft SQL Server** to transform raw e-commerce transactions into business insights. The analysis follows the customer and order lifecycle from revenue generation through purchasing behavior, seller performance, delivery and customer satisfaction.
 
-The objective was to transform raw transactional data into meaningful business insights across the complete e-commerce lifecycle — from orders and revenue to customers, products, sellers, payments, reviews and delivery performance.
+The focus is not only on writing SQL queries, but on answering practical business questions and translating findings into recommendations.
 
-The project focuses not only on writing SQL queries, but on answering **real business questions and translating analytical findings into actionable recommendations.**
-
----
-
-## 🎯 Business Objective
-
-The analysis was designed to answer key questions around:
+## 🎯 Business Questions
 
 - How is revenue growing over time?
 - Which months and categories drive revenue?
-- Is growth driven by higher order value or higher order volume?
+- Is growth driven by order volume or order value?
 - How strong is customer retention?
-- Which product categories perform best?
-- Which sellers contribute the most revenue?
+- Which categories and sellers perform best?
 - How do customers pay?
-- What is the relationship between delivery performance and customer satisfaction?
-- Where are the biggest opportunities for business improvement?
-
----
+- How does delivery performance relate to customer satisfaction?
+- Where are the biggest opportunities for improvement?
 
 ## 🗂️ Dataset
-
-The project uses the **Brazilian E-Commerce Public Dataset by Olist**.
 
 | Table | Records |
 |---|---:|
@@ -45,89 +36,45 @@ The project uses the **Brazilian E-Commerce Public Dataset by Olist**.
 | sellers | 3,095 |
 | product_category_translation | 71 |
 
-The dataset represents orders placed through the Olist marketplace and contains information covering customers, orders, products, sellers, payments, reviews and logistics.
-
----
-
 ## 🛠️ Tools & Technologies
 
-- **SQL**
-- **Microsoft SQL Server**
-- Relational Database Analysis
-- Data Cleaning & Validation
-- Exploratory Data Analysis
+- SQL
+- Microsoft SQL Server
+- Relational database analysis
+- Data cleaning & validation
+- Exploratory data analysis
 - CTEs
-- Window Functions
-- Complex Joins
+- Window functions
+- Complex joins
 - Aggregations
-- Conditional Logic
-- Business Analysis
+- Conditional logic
+- Business analysis
 
----
-
-# 🔍 Analysis Areas
+## 🔍 Analysis Areas
 
 ### 1. Sales & Order Analysis
-
-- Revenue performance
-- Order volume
-- Monthly and yearly trends
-- Average Order Value
-- Order status
-- Revenue growth
+Revenue, order volume, monthly/yearly trends, AOV, order status and growth.
 
 ### 2. Customer Analysis
-
-- Customer distribution
-- Purchase behavior
-- One-time vs repeat customers
-- Customer spending
-- Customer retention
+Customer distribution, purchase behavior, one-time vs repeat customers, spending and retention.
 
 ### 3. Product Analysis
-
-- Category performance
-- Revenue contribution
-- Top-performing categories
-- Order volume
-- Average order value
+Category performance, revenue contribution, order volume and average order value.
 
 ### 4. Seller Analysis
-
-- Seller revenue
-- Seller order volume
-- Revenue per order
-- Seller contribution
+Seller revenue, order volume, revenue per order and seller contribution.
 
 ### 5. Payment Analysis
-
-- Payment methods
-- Payment value
-- Average transaction value
-- Installment behavior
+Payment methods, payment value, average transaction value and installment behavior.
 
 ### 6. Review Analysis
-
-- Review score distribution
-- Customer satisfaction
-- Delivery vs review performance
+Review score distribution, customer satisfaction and delivery vs review performance.
 
 ### 7. Logistics Analysis
-
-- Delivery performance
-- Average delivery time
-- Late vs on-time orders
-- Delivery delays
-- Relationship between delivery and customer satisfaction
+Delivery time, on-time vs late orders, delays and their relationship with satisfaction.
 
 ### 8. Advanced SQL Analysis
-
-- Common Table Expressions
-- Window Functions
-- Ranking
-- Conditional Logic
-- Complex Joins
-- Business-oriented analytical queries
+CTEs, window functions, ranking, conditional logic, complex joins and business-oriented analytical queries.
 
 ---
 
@@ -143,33 +90,16 @@ Revenue increased from **$2.54M to $6.53M** between January–August 2017 and Ja
 | Jan–Aug 2018 | $6.53M |
 | YoY Growth | **+157.2%** |
 
-Orders increased by the same **157.2%**, while Average Order Value remained almost unchanged at approximately **$138**.
-
-### Insight
-
-Growth was primarily **volume-driven rather than value-driven**.
-
----
+Orders increased by the same **157.2%**, while AOV remained approximately **$138**, indicating volume-driven growth.
 
 ## 2. 2018 revenue remained significantly above 2017
 
 Every comparable month from January to August 2018 generated substantially more revenue than the corresponding month in 2017.
 
-The strongest 2018 month was:
-
-**April 2018 — $996.65K**
-
-January showed the largest YoY increase:
-
-**+689.9%**
-
-Growth gradually normalized as the 2018 revenue base became larger.
-
----
+**April 2018:** $996.65K — strongest 2018 month.  
+**January:** +689.9% YoY — largest comparable monthly increase.
 
 ## 3. Beauty & Health was the top revenue category
-
-The leading product categories were:
 
 | Rank | Category | Revenue |
 |---:|---|---:|
@@ -179,11 +109,9 @@ The leading product categories were:
 | 4 | Sports & Leisure | $988K |
 | 5 | Computers & Accessories | $912K |
 
-**Beauty & Health contributed approximately 9.26% of analyzed revenue.**
+Beauty & Health contributed approximately **9.26%** of analyzed revenue.
 
----
-
-## 4. Customer retention is the biggest opportunity
+## 4. Customer retention is a major opportunity
 
 Approximately **97% of analyzed customers were one-time buyers**, while only around **3% were repeat customers**.
 
@@ -192,13 +120,7 @@ Approximately **97% of analyzed customers were one-time buyers**, while only aro
 | One-time | 92,507 | 92,507 | $12.83M |
 | Repeat | 2,913 | 6,159 | $763K |
 
-### Insight
-
-The platform demonstrates strong customer acquisition but relatively weak repeat purchasing.
-
-This makes **customer retention and customer lifetime value** major opportunities for improvement.
-
----
+The platform demonstrates strong acquisition but relatively weak repeat purchasing, making retention and customer lifetime value important opportunities.
 
 ## 5. Delivery performance strongly affects satisfaction
 
@@ -207,117 +129,48 @@ This makes **customer retention and customer lifetime value** major opportunitie
 | On Time | **4.29 / 5** |
 | Late | **2.57 / 5** |
 
-This represents a **1.73-point satisfaction gap**.
+This is a **1.73-point satisfaction gap**. Overall, **91.89%** of orders were on time and **8.11%** were late.
 
-Overall:
-
-- **91.89%** of orders were delivered on time
-- **8.11%** were late
-
-### Insight
-
-Reducing delivery delays is not only a logistics objective — it is directly connected to customer experience.
-
----
+Delivery reliability is therefore both a logistics and customer-experience priority.
 
 ## 6. Revenue leaders are not always volume leaders
 
-Seller performance showed significant differences between revenue and order volume.
+Seller performance varies substantially by revenue and order volume. One seller generated approximately **$223K from 358 orders**, while another generated approximately **$200K from 1,806 orders**.
 
-For example, one seller generated approximately **$223K from only 358 orders**, while another generated approximately **$200K from 1,806 orders**.
-
-### Insight
-
-Seller performance should be evaluated using multiple metrics rather than revenue alone:
-
-- Revenue
-- Orders
-- Revenue per order
-- Delivery performance
-- Customer satisfaction
+Seller performance should therefore be evaluated using multiple metrics: revenue, orders, revenue per order, delivery performance and customer satisfaction.
 
 ---
 
 # 💡 Business Recommendations
 
-## 1. Improve Customer Retention
+### 1. Improve Customer Retention
 
-With approximately 97% of customers purchasing only once, increasing repeat purchases represents the largest opportunity.
+Use personalized post-purchase campaigns, recommendations, cross-selling, loyalty incentives and re-engagement offers to increase repeat purchasing.
 
-Recommended actions:
+### 2. Reduce Late Deliveries
 
-- Personalized post-purchase campaigns
-- Product recommendations
-- Cross-selling
-- Loyalty incentives
-- Targeted repeat-purchase offers
-- Re-engagement campaigns for high-value one-time customers
+Identify recurring seller and regional delays, improve delivery estimates, flag high-risk shipments and investigate logistics bottlenecks.
 
----
+### 3. Increase Customer Value
 
-## 2. Reduce Late Deliveries
+Since revenue growth has been largely volume-driven while AOV remains stable, focus on bundles, cross-category recommendations, premium products and repeat-purchase incentives.
 
-Late orders received an average review score of only **2.57/5** compared with **4.29/5** for on-time orders.
+### 4. Prioritize High-Performing Categories & Sellers
 
-Recommended actions:
-
-- Identify sellers with recurring delays
-- Monitor delivery performance by region
-- Improve delivery-time estimates
-- Flag high-risk shipments
-- Investigate recurring logistics bottlenecks
-
----
-
-## 3. Increase Customer Value
-
-Revenue increased by 157.2%, while AOV remained approximately flat.
-
-Future growth should therefore focus not only on acquiring more orders, but also on increasing the value of each customer.
-
-Potential strategies:
-
-- Product bundles
-- Cross-category recommendations
-- Premium product promotion
-- Personalized offers
-- Repeat-purchase incentives
-
----
-
-## 4. Prioritize High-Performing Categories
-
-Beauty & Health, Watches & Gifts and Bed/Bath/Table were among the strongest revenue categories.
-
-The business could prioritize these categories through:
-
-- Inventory availability
-- Seller quality monitoring
-- Targeted promotions
-- Cross-selling
-- Category-specific campaigns
+Use category and seller performance to guide inventory, promotions, seller quality monitoring and targeted campaigns.
 
 ---
 
 # 📈 Strategic Takeaway
 
-The analysis suggests that Olist has successfully demonstrated **strong demand and rapid revenue growth**.
+Olist demonstrates strong demand and rapid revenue growth. The next stage of growth should focus on improving the **quality and value of existing customer relationships**, rather than relying solely on additional transaction volume.
 
-However, the next stage of growth should focus on improving the **quality and value of existing customer relationships**, rather than relying solely on additional transaction volume.
+**Four biggest opportunities:**
 
-### The four biggest opportunities are:
-
-**1. Retention**  
-Convert one-time customers into repeat buyers.
-
-**2. Delivery**  
-Reduce late deliveries and protect customer satisfaction.
-
-**3. Customer Value**  
-Increase revenue per customer through cross-selling and repeat purchases.
-
-**4. Category & Seller Optimization**  
-Focus resources on proven high-performing categories and sellers.
+1. **Retention** — convert one-time customers into repeat buyers.
+2. **Delivery** — reduce late deliveries and protect customer satisfaction.
+3. **Customer Value** — increase revenue per customer through cross-selling and repeat purchases.
+4. **Category & Seller Optimization** — focus resources on proven high-performing areas.
 
 > **Olist has demonstrated that it can generate demand. The next opportunity is turning that demand into stronger retention, higher customer value and more reliable customer experiences.**
 
@@ -329,7 +182,6 @@ Focus resources on proven high-performing categories and sellers.
 olist-ecommerce-sql-analysis/
 │
 ├── README.md
-│
 ├── sql/
 │   ├── 01_data_validation.sql
 │   ├── 02_revenue_analysis.sql
@@ -344,3 +196,16 @@ olist-ecommerce-sql-analysis/
 │   └── data_dictionary.md
 │
 └── images/
+```
+
+## 🚀 Analytics Journey
+
+This is **Project 02** in my analytics portfolio, following an Excel-based sales dashboard and leading into Power BI and an eventual end-to-end analytics project.
+
+**Excel → SQL → Power BI → End-to-End Analytics**
+
+---
+
+**Portfolio:** [aryan-singhai.github.io](https://aryan-singhai.github.io/)  
+**GitHub:** [github.com/Aryan-Singhai](https://github.com/Aryan-Singhai)  
+**LinkedIn:** [linkedin.com/in/aryan-singhai](https://www.linkedin.com/in/aryan-singhai/)

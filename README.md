@@ -331,18 +331,16 @@ olist-ecommerce-sql-analysis/
 ├── README.md
 │
 ├── sql/
-│   ├── 01_database_setup.sql
-│   ├── 02_data_validation.sql
-│   ├── 03_sales_analysis.sql
-│   ├── 04_customer_analysis.sql
-│   ├── 05_product_analysis.sql
-│   ├── 06_seller_analysis.sql
-│   ├── 07_payment_analysis.sql
-│   ├── 08_review_analysis.sql
-│   ├── 09_logistics_analysis.sql
-│   └── 10_advanced_analysis.sql
+│   ├── 01_data_validation.sql
+│   ├── 02_revenue_analysis.sql
+│   ├── 03_customer_analysis.sql
+│   ├── 04_product_analysis.sql
+│   ├── 05_seller_analysis.sql
+│   ├── 06_payment_analysis.sql
+│   └── 07_delivery_review_analysis.sql
 │
 ├── documentation/
-│   └── business_insights.md
+│   ├── business_insights.md
+│   └── data_dictionary.md
 │
 └── images/

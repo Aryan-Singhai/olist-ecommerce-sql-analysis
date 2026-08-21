@@ -196,6 +196,11 @@ olist-ecommerce-sql-analysis/
 │   └── data_dictionary.md
 │
 └── images/
+    ├── revenue_growth.png
+    ├── monthly_revenue_trend.png
+    ├── top_categories.png
+    ├── customer_retention.png
+    └── delivery_satisfaction.png
 ```
 
 ## 🚀 Analytics Journey
